@@ -39,8 +39,8 @@ header {
 }
 /* Header logo */
 .header-logo {
-    width: 45%;
-    margin-top: 30px;
+    width: 50%;
+    margin-top: 25px;
     margin-left: 25px;
     white-space: no-wrap;
 }
@@ -180,7 +180,7 @@ hr {
     background-image: url("/public/images/home-stenograph-machine.png");
     background-position: right;
     background-position-y: 90px;
-    background-position-x: 150%;
+    background-position-x: 135%;
     background-repeat: no-repeat;
     background-size: 600px;
     height: 100%;
@@ -205,4 +205,24 @@ hr {
 .depose-text p {
     display: block;
         color: #FFFFFF;
+}
+
+.depose-image-1, .depose-image-2 {
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    float: left;
+    border: 1px solid black;
+}
+
+.depose-image-1 {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 75px;
+}
+
+.depose-image-2 {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 225px;
 }
