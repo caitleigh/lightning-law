@@ -1,0 +1,208 @@
+body {
+    /* height: 100%; */
+    box-sizing: border-box;
+    font-family: 'Open Sans',
+        sans-serif;
+        font: #33312F;
+    ;}
+
+/* Header */
+header {
+    height: 700px;
+    position: relative;
+    font-family: OpenSans-Regular;
+    color: #FFFFFF;
+}
+
+/* Header background image */
+.header-background {
+    background-image: url("./public/images/home-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+}
+.header-background:after {
+    content: "";
+    background-color: #33312F;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+}
+/* Header logo */
+.header-logo {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 25px;
+    white-space: no-wrap;
+}
+
+/* Nav Bar */
+
+nav {
+    display: inline-flex;
+    width: 100%;
+}
+
+/* .nav-bar-list {
+    display: inline-flex;
+} */
+
+.nav-bar {
+    width: 100%;
+        margin-right: 25px;
+
+    display: inline-flex;
+    /* float: right; */
+}
+
+.nav-bar-list {
+    width: 100%;
+
+    height: 100%;
+    margin-top: 30px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between !important;
+
+}
+
+li {
+    /* width: 50%; */
+    list-style: none;
+    font-family: 'Open Sans',
+    sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr {
+    background-color: #F6F5F4;
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    border-top: 1px solid rgba (0,0,0,.1);
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+}
+
+/* Header Intro */
+
+.header-intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.header-intro h2 {
+    color: #FFFFFF;
+    font-family: 'Merriweather',
+    serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-bottom: 0px;
+}
+
+.depo-background {
+    background-color: #F6F5F4;
+    width: 100%;
+    height: -.5px !important;
+    margin-left: -10px; 
+    padding-left: -10px;
+    padding-right: 10px;
+    border-radius: 5%;
+}
+.header-intro h2 .depositions{
+    color: rgb(120, 39, 25);
+    padding-left: 10px;
+}
+
+.header-intro p { 
+    font-family: 'Open Sans',
+    sans-serif;
+}
+/*   Main   */
+/* Accelerate */
+.accelerate {
+    background-color: #F6F5F4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.accelerate h3 { 
+        color: rgb(120, 39, 25);
+        font-family: 'Merriweather',
+        serif;
+        font-size: 1.8em;
+        width: 100%;
+        align-content: center;
+        margin: auto;
+}
+
+.accelerate p {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.acclerate-separator {
+    width: 90px;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(120, 39, 25);
+    border: none;
+}
+
+/* Depose */
+
+.depose {
+    height: 600px;
+    width: 100%;
+    display: block;
+}
+
+.depose-background {
+    background-color: rgba(50, 48, 47);
+    background-image: url("/public/images/home-stenograph-machine.png");
+    background-position: right;
+    background-position-y: 90px;
+    background-position-x: 150%;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    height: 100%;
+    z-index: 99;
+
+}
+.depose-text {
+    float: right;
+    width: 50%;
+}
+.depose-text h2 {
+    /* width: 50%; */
+    /* float: right; */
+        color: #FFFFFF;
+        font-family: 'Merriweather',
+        serif;
+        font-size: 3em;
+        line-height: 1.5em;
+    /* margin-top: 0; */
+}
+
+.depose-text p {
+    display: block;
+        color: #FFFFFF;
+}
