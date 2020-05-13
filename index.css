@@ -33,7 +33,6 @@ header {
 .header-background-overlay {
     content: "";
     background-color: rgb(51, 49, 47, .8);
-    opacity: .8;
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -469,7 +468,6 @@ footer h2 {
     font-weight: normal;
     text-transform: uppercase;
     color: #FFFFFF;
-
 }
 
 footer-nav-column {
