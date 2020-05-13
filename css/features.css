@@ -45,9 +45,10 @@ header {
 
 /* Header logo */
 .header-logo {
-    width: 50%;
+    width: 200px;
     margin-top: 25px;
     margin-left: 25px;
+    margin-right: 50px;
     white-space: no-wrap;
     z-index: 20;
 
@@ -193,20 +194,29 @@ hr {
 }
 
 .cr-feature-intro h2 {
+    display: table;
     width: 35%;
     color: #FFFFFF;
-    background-color: #782719;
     font-family: 'Merriweather',
         serif;
-    font-size: 3em;
+    font-size: 4.5em;
     /* margin-bottom: 0px; */
+        /* background-color: #782719; */
+
 }
+
+.cr-feature-intro h2 span {
+  background-color: #782719;
+  box-decoration-break: clone;
+    line-height: 1.4;
+  }
 
 .cr-feature-intro p {
     width: 70%;
     font-family: 'Open Sans',
         sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
+    line-height: 1.5;
     margin-left: 15%;
     padding-top: 40px;
 }
@@ -234,18 +244,17 @@ main {
         color: rgb(120, 39, 25);
 }
 .features {
+    display: flexbox;
     background-color: #F6F5F4;
     padding: 5%;
+    flex-flow: column;
+    flex-wrap: wrap;
     /* display: inline; */
-}
-
-.features div {
-    display: inline-flex;
-    flex-flow: column-wrap;
 }
 
 .feature-info {
     width: 100%;
+    
 }
 
 h3 {
@@ -256,41 +265,74 @@ h3 {
     width: 100%;
     align-content: center;
     margin: auto;
+    padding: 30px;
+    
 }
 
 .highlight-word {
     color: rgb(120, 39, 25);
 }
 
+.features h5 {
+    /* display: inline-flex; */
+    font-size: 20px;
+    /* padding: 20px; */
+    padding-top: 30px;
+    width: 35%;
+}
+
+.feature-text-left{
+    width: 70%;
+    align-items: left;
+    margin-right: 20%;
+}
+
+.feature-text-right {
+    width: 70%;
+    margin-left: 20%;
+    align-items: right
+}
 .features p {
     /* width: 100%; */
-    margin-top: 30px;
-    font-size: 12px;
+        display: inline-block;
+    width: 60%;
+    font-size: 14px;
     line-height: 1.75em;
     padding-bottom: 10px;
+        flex-flow: column;
+        margin-bottom: 30px;
 }
 
 .features hr {
     background-color: rgb(120, 39, 25);
     border-color: rgb(120, 39, 25);
-    width: 100%;
+    width: 80%;
     position: absolute;
     z-index: 1
 }
 
+.feature-col {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+}
+
+
 .feature-imgs-right {
 
-    height: 150px;
+    height: 170px;
     float: right;
-    z-index: 2;
+    z-index: 3;
+    position: relative;
 }
 
 .feature-imgs-left {
-    height: 150px;
-        z-index: 2;
+    height: 170px;
+    z-index: 3;
+    float: left;
+    position: relative;
 
 }
-
 
 /* Footer */
 
