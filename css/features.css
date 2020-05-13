@@ -1,5 +1,4 @@
 body {
-    /* height: 100%; */
     margin: 0;
     background-color: #33312F;
     box-sizing: border-box;
@@ -11,8 +10,7 @@ body {
 
 /* Header */
 header {
-    /* height: 700px; */
-    /* position: relative; */
+
     font-family: OpenSans-Regular;
     color: #FFFFFF;
 }
@@ -70,7 +68,6 @@ nav {
 
     display: inline-flex;
     overflow: hidden;
-    /* float: right; */
 }
 
 .nav-bar-list li {
@@ -126,9 +123,7 @@ nav {
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
 }
 
 .nav-bar a:hover,
@@ -212,7 +207,6 @@ hr {
     font-family: 'Open Sans',
         sans-serif;
     font-size: 1em;
-    /* line-height: 2; */
     margin-left: 15%;
     padding-top: 40px;
 }
@@ -260,7 +254,6 @@ h5 {
     font-size: 20px;
     background-color: transparent;
     width: 100%;
-    /* position: relative; */
 }
 
 .highlight-word {
@@ -284,16 +277,13 @@ h5 {
 }
 
 .feature-imgs-right {
-    /* display: flex; */
-    /* width: 20%; */
+
     height: 150px;
     float: right;
-    /* position: absolute */
     z-index: 2;
 }
 
 .feature-imgs-left {
-    /* width: 20%; */
     height: 150px;
         z-index: 2;
 
@@ -381,7 +371,6 @@ footer-nav-column {
 }
 
 .copyright p {
-    /* margin-top: 10%; */
     display: flex;
     width: 100%;
     color: grey;
@@ -390,9 +379,6 @@ footer-nav-column {
     justify-content: center;
     position: relative;
 }
-
-
-
 
 a:hover {
     cursor: pointer;
