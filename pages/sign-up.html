@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up</title>
 
     <!--  stylehsheets    -->
     <link rel="stylesheet" href="/index.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- header for all pages  -->
     <header>
         <nav role="navigation">
@@ -37,10 +39,30 @@
                 </ul>
             </div>
         </nav>
-      <hr />
+        <hr />
     </header>
 
     <main>
+        <section class="sign-up-info">
+            <h2>Welcome to <br />
+                Lightning Law</h2>
+
+            <p>
+                You’re about to get access to depositions made easy.
+            </p>
+            <p>With Lightning Law, lawyers can take depositions from anywhere, share documents, create exhibits
+                remotely, obtain video and rough transcripts instantly, and find the right court reporter for the job.
+            </p>
+        </section>
+
+        <section class="sign-up-form">
+            <div class="head" class="lawyer-sign-up">
+                <div onclick="swap(this)" data-tab="Lawyers" class="lawyers-sign-up">
+                </div>
+                <div onclick="swap(this)" data-tab="Court Reporters" class="court-reporter-sign-up">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer for all pages  -->
@@ -77,5 +99,6 @@
     </footer>
 
 
-  </body>
+</body>
+
 </html>
