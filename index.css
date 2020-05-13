@@ -1,5 +1,5 @@
 body {
-\    margin: 0;
+    margin: 0;
     background-color: #33312F;
     box-sizing: border-box;
     font-family: 'Open Sans',
@@ -114,6 +114,13 @@ nav {
         text-transform: uppercase;
     float: left;
     overflow: hidden;
+        color: white;
+
+}
+
+.dropdown:hover {
+    color:#D7A870;
+    cursor: pointer;
 }
 
 .dropdown .dropbtn {
@@ -204,12 +211,13 @@ hr {
 
 .depo-background {
     background-color: #F6F5F4;
-    width: 100%;
-    height: -.5px !important;
+    width: 295px;
+    height: 1.25em;
     margin-left: -10px;
     padding-left: -10px;
     padding-right: 10px;
-    border-radius: 5%;
+    border-radius: 2%;
+    position: absolute;
 }
 
 .header-intro h2 .depositions {
@@ -218,7 +226,7 @@ hr {
 }
 
 .header-intro p {
-    width: 60%;
+    width: 425px;
     font-family: 'Open Sans',
         sans-serif;
 }
@@ -262,7 +270,7 @@ hr {
 .depose {
     height: 600px;
     width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 .depose-background {
@@ -328,10 +336,14 @@ depose-screenshot {
 
 .features-main {
     width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 .feature-background {
-    height: 350px;
+    /* height: 350px; */
+        height: 100%;
+
     width: 100%;
     background:
         linear-gradient(rgb(255, 255, 255, .9),
@@ -347,12 +359,13 @@ depose-screenshot {
 .feature-columns-main {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    /* height: 300px; */
     margin: 30px;
 }
 
 .features-col {
     margin-right: 30px;
+    margin-bottom: 30px;
     width: 350px;
 
 }

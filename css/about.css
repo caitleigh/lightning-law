@@ -1,6 +1,7 @@
 body {
     background-color: #33312F;
     box-sizing: border-box;
+    margin
 }
 
 .about-header {
@@ -40,6 +41,7 @@ body {
 
     background-color: #F6F5F4;
     padding: 30px;
+    margin: 0;
 }
 
 .our-story h3 {

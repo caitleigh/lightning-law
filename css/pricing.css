@@ -1,0 +1,105 @@
+body {
+    background-color: #33312F;
+    box-sizing: border-box;
+}
+
+.pricing-header {
+    /* height: 100%; */
+    padding-bottom: 30px;
+}
+
+.pricing-intro {
+    align-content: center;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-right: 30px;
+    font-size: 12px;
+}
+
+.pricing-intro h2 {
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
+        serif;
+    font-size: 3em;
+    padding-right: 45%;
+    padding-left: 30px;
+    height: 40px;
+    text-align: center;
+}
+
+.pricing-intro p {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    line-height: 1.5em;
+    padding-top: 5px;
+}
+
+            /* <section class="pricing-info"><div class="pricing-table"><div class="pricing-text"> */
+
+.pricing-info {
+
+    background-color: #F6F5F4;
+    padding: 30px;
+    display: flex;
+    /* width: 100%; */
+}
+
+h3 {
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
+    serif;
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 11px;
+    margin-top: 0;
+}
+.pricing-table {
+    background-color: #FFFFFF;
+    width: 300px;
+    border: 2px solid #F6F5F4;
+    text-align: center;
+    /* margin-right: 300px; */
+}
+
+.pricing-table ul {
+    padding-left: 0;
+}
+
+.pricing-table li {
+    list-style: none;
+    font-size: 11px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-table hr {
+    width: 20%;
+        height: 2px;
+        background-color: rgb(120, 39, 25);
+        border: none;
+}
+
+.pricing-info button {
+    background-color: rgb(120, 39, 25);
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    height: 40px;
+    width: 125px;
+    margin-top: 15px;
+}
+
+.pricing-text { 
+    padding-left: 250px;
+    width: 70%;
+    padding-right: 30px;
+}

@@ -21,7 +21,7 @@ body {
     height: 75%;
     background-image: url("../public/images/faq-hero.jpg");
     background-position: center;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
@@ -167,7 +167,7 @@ nav {
     font-family: 'Merriweather',
         serif;
     font-size: 1em;
-    color: #33312F;
+    color: #FFFFFF;
     z-index: 100 !important;
 }
 
@@ -214,8 +214,10 @@ hr {
 /*   Main   */
 
 main {
-    height: 100%;
+    /* height: 700px; */
     display: flex;
+    /* position: absolute; */
+    
 }
 
 .faq-menu {
