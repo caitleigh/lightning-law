@@ -3,13 +3,14 @@ body {
     box-sizing: border-box;
     font-family: 'Open Sans',
         sans-serif;
-        font: #33312F;
-    ;}
+    font: #33312F;
+    ;
+}
 
 /* Header */
 header {
     height: 700px;
-    position: relative;
+    /* position: relative; */
     font-family: OpenSans-Regular;
     color: #FFFFFF;
 }
@@ -24,9 +25,9 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -99;
 }
-.header-background:after {
+
+/* .header-background:after {
     content: "";
     background-color: #33312F;
     opacity: 0.8;
@@ -35,8 +36,10 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -99;
-}
+    z-index: -100;
+} */
+
+
 /* Header logo */
 .header-logo {
     width: 50%;
@@ -52,21 +55,22 @@ nav {
     width: 100%;
 }
 
-/* .nav-bar-list {
-    display: inline-flex;
-} */
-
 .nav-bar {
+    z-index: 2;
     width: 100%;
-        margin-right: 25px;
+    margin-right: 25px;
 
     display: inline-flex;
+    overflow: hidden;
     /* float: right; */
+}
+
+.nav-bar-list li {
+    list-style: none;
 }
 
 .nav-bar-list {
     width: 100%;
-
     height: 100%;
     margin-top: 30px;
     align-items: center;
@@ -75,15 +79,72 @@ nav {
 
 }
 
-li {
+.nav-bar-list a {
     /* width: 50%; */
-    list-style: none;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+}
+
+/*  Features dropdrown*/
+
+.dropdown {
+        font-family: 'Open Sans',
+        sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.nav-bar a:hover,
+.dropdown:hover .dropbtn {
+    color: #D7A870
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D7A870;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #D7A870;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 hr {
@@ -91,10 +152,10 @@ hr {
     width: 95%;
     margin-top: 1rem;
     margin-bottom: 0;
-    border-top: 1px solid rgba (0,0,0,.1);
-        box-sizing: content-box;
-        height: 0;
-        overflow: visible;
+    border-top: 1px solid rgba (0, 0, 0, .1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
 }
 
 /* Header Intro */
@@ -109,7 +170,7 @@ hr {
 .header-intro h2 {
     color: #FFFFFF;
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 3em;
     line-height: 1.5em;
     margin-bottom: 0px;
@@ -119,20 +180,23 @@ hr {
     background-color: #F6F5F4;
     width: 100%;
     height: -.5px !important;
-    margin-left: -10px; 
+    margin-left: -10px;
     padding-left: -10px;
     padding-right: 10px;
     border-radius: 5%;
 }
-.header-intro h2 .depositions{
+
+.header-intro h2 .depositions {
     color: rgb(120, 39, 25);
     padding-left: 10px;
 }
 
-.header-intro p { 
+.header-intro p {
+    width: 60%;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
 }
+
 /*   Main   */
 /* Accelerate */
 .accelerate {
@@ -142,14 +206,14 @@ hr {
     text-align: center;
 }
 
-.accelerate h3 { 
-        color: rgb(120, 39, 25);
-        font-family: 'Merriweather',
+.accelerate h3 {
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
         serif;
-        font-size: 1.8em;
-        width: 100%;
-        align-content: center;
-        margin: auto;
+    font-size: 1.8em;
+    width: 100%;
+    align-content: center;
+    margin: auto;
 }
 
 .accelerate p {
@@ -180,34 +244,45 @@ hr {
     background-image: url("/public/images/home-stenograph-machine.png");
     background-position: right;
     background-position-y: 90px;
-    background-position-x: 135%;
+    background-position-x: 125%;
     background-repeat: no-repeat;
     background-size: 600px;
     height: 100%;
-    z-index: 99;
+    z-index: -99;
 
 }
+
 .depose-text {
     float: right;
+    right: 0;
     width: 50%;
+    position: absolute;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+
 .depose-text h2 {
     /* width: 50%; */
     /* float: right; */
-        color: #FFFFFF;
-        font-family: 'Merriweather',
+    color: #FFFFFF;
+    font-family: 'Merriweather',
         serif;
-        font-size: 3em;
-        line-height: 1.5em;
+    font-size: 3em;
+    line-height: 1.5em;
     /* margin-top: 0; */
 }
 
 .depose-text p {
     display: block;
-        color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.depose-image-1, .depose-image-2 {
+depose-screenshot {
+    margin-right: 5%;
+}
+
+.depose-image-1,
+.depose-image-2 {
     background-color: white;
     height: 300px;
     width: 400px;
@@ -216,13 +291,175 @@ hr {
 }
 
 .depose-image-1 {
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 75px;
+    /* position: relative; */
+    margin-left: 5%;
+    margin-top: 4%;
 }
 
 .depose-image-2 {
     position: absolute;
-    margin-left: 100px;
-    margin-top: 225px;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+/* Features */
+
+.features-main {
+    width: 100%;
+    /* padding: 30px; */
+}
+
+.feature-background {
+    height: 350px;
+    width: 100%;
+    background:
+        linear-gradient(rgb(255, 255, 255, .9),
+            rgb(255, 255, 255, .9)),
+        url(./public/images/home-features.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    background-size: cover;
+    z-index: -99;
+}
+
+
+.feature-columns-main {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 30px; */
+    height: 300px;
+    margin: 30px;
+}
+
+.features-col {
+    margin-right: 30px;
+    width: 350px;
+
+}
+
+.features-col h3 {
+    /* width: 175px; */
+    /* padding-top: 30px; */
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
+        serif;
+    font-size: 1.8em;
+    padding: 30px;
+
+}
+
+.lawyers-col {
+    width: 350px;
+    margin-right: 30px;
+
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #F6F5F4;
+}
+
+.lawyers-col h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.court-reporters-col {
+    background-color: #FFFFFF;
+
+    width: 350px;
+    padding: 30px;
+    border: 1px solid #F6F5F4;
+}
+
+.court-reporters-col h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+
+    /* position: absolute; */
+}
+
+.footer-background {
+    height: 500px;
+    background-image: url("/public/images/footer-ink-well.png");
+    background-color: rgba(50, 48, 47);
+    background-size: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* z-index: -99; */
+    position: relative;
+}
+
+
+footer h2 {
+    color: #FFFFFF;
+    font-family: 'Merriweather',
+        serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-bottom: 0px;
+}
+
+.footer-sign-up {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between !important;
+
+
+}
+
+.footer-nav {
+    overflow: hidden;
+    width: 400px;
+    margin: auto;
+}
+
+.footer-nav li {
+    list-style: none;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.footer-nav-left {
+    float: left;
+    /* display: inline; */
+    width: 175px;
+}
+
+.footer-nav-right {
+    float: right;
+    /* display:inline; */
+    width: 175px;
+}
+
+.copyright {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #D7A870
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
