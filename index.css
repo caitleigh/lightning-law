@@ -1,6 +1,5 @@
 body {
-    /* height: 100%; */
-    margin: 0;
+\    margin: 0;
     background-color: #33312F;
     box-sizing: border-box;
     font-family: 'Open Sans',
@@ -125,9 +124,7 @@ nav {
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
 }
 
 .nav-bar a:hover,
@@ -290,14 +287,12 @@ hr {
 }
 
 .depose-text h2 {
-    /* width: 50%; */
-    /* float: right; */
+
     color: #FFFFFF;
     font-family: 'Merriweather',
         serif;
     font-size: 3em;
     line-height: 1.5em;
-    /* margin-top: 0; */
 }
 
 .depose-text p {
@@ -319,7 +314,6 @@ depose-screenshot {
 }
 
 .depose-image-1 {
-    /* position: relative; */
     margin-left: 5%;
     margin-top: 4%;
 }
@@ -334,7 +328,6 @@ depose-screenshot {
 
 .features-main {
     width: 100%;
-    /* padding: 30px; */
 }
 
 .feature-background {
@@ -347,7 +340,6 @@ depose-screenshot {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: absolute; */
     background-size: cover;
 }
 
@@ -355,7 +347,6 @@ depose-screenshot {
 .feature-columns-main {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 30px; */
     height: 300px;
     margin: 30px;
 }
@@ -367,8 +358,6 @@ depose-screenshot {
 }
 
 .features-col h3 {
-    /* width: 175px; */
-    /* padding-top: 30px; */
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
         serif;
@@ -482,7 +471,6 @@ footer-nav-column {
 
 }
 .copyright p {
-    /* margin-top: 10%; */
     display: flex;
     width: 100%;
     color: grey;

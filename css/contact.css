@@ -43,13 +43,14 @@ body {
 }
 
 .form-background {
-        background: linear-gradient(rgb(246, 245, 244, .9),
+    background: linear-gradient(rgb(246, 245, 244, .9),
             rgb(2246, 245, 244, .9)),
         url("../public/images/features-hero.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 form {
     padding: 30px;
 }
@@ -111,8 +112,3 @@ form button {
     margin-top: 10px;
 
 }
-
-
-
-
-
