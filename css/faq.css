@@ -10,7 +10,7 @@ body {
 }
 
 /* Header */
-header {
+.faq-header {
     /* height: 700px; */
     /* position: relative; */
     font-family: OpenSans-Regular;
@@ -18,11 +18,10 @@ header {
 }
 
 /* Header background image */
-.header-background {
+.faq-background {
     height: 75%;
-    background-image: url("../public/images/cr-features-hero.jpg");
+    background-image: url("../public/images/faq-hero.jpg");
     background-position: center;
-    background-size: cover;
     position: relative;
     top: 0;
     left: 0;
@@ -31,8 +30,9 @@ header {
     z-index: 1;
 }
 
-.header-background-overlay {
+.faq-background-overlay {
     content: "";
+    height: 100%;
     background-color: rgb(51, 49, 47, .8);
     background-size: cover;
     background-position: center;
@@ -188,7 +188,7 @@ hr {
 
 /* Header Intro */
 
-.cr-feature-intro {
+.faq-intro {
     display: inline-flex;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -197,7 +197,7 @@ hr {
     z-index: 20;
 }
 
-.cr-feature-intro h2 {
+.faq-intro h2 {
     width: 35%;
     color: #FFFFFF;
     background-color: #782719;
@@ -207,7 +207,7 @@ hr {
     /* margin-bottom: 0px; */
 }
 
-.cr-feature-intro p {
+.faq-intro p {
     width: 70%;
     font-family: 'Open Sans',
         sans-serif;
@@ -224,7 +224,7 @@ main {
     display: flex;
 }
 
-.court-reporter-menu{
+.faq-menu {
     width: 20%;
     color: rgb(120, 39, 25);
     font-weight: bold;
@@ -236,69 +236,49 @@ main {
     padding-top: 30px;
 }
 
-.court-reporter-menu a {
-        color: rgb(120, 39, 25);
-}
-.features {
-    background-color: #F6F5F4;
-    padding: 5%;
-    /* display: inline; */
-}
-
-.features div {
-    display: inline-flex;
-    flex-flow: column-wrap;
-}
-
-.feature-info {
-    width: 100%;
-}
-
-h5 {
-    padding-top: 20px;
-    font-weight: normal;
-    font-size: 20px;
-    background-color: transparent;
-    width: 100%;
-    /* position: relative; */
-}
-
-.highlight-word {
+.faq-menu a {
     color: rgb(120, 39, 25);
 }
 
-.features p {
+
+.faq-content {
+    background-color: #F6F5F4;
     width: 100%;
-    margin-top: 30px;
-    font-size: 12px;
-    line-height: 1.75em;
-    padding-bottom: 10px;
+    padding-right: 30px;
 }
 
-.features hr {
-    background-color: rgb(120, 39, 25);
-    border-color: rgb(120, 39, 25);
+/* Accordian  */
+.accordion {
+    background-color: #FFFFFF;
+        color: rgb(120, 39, 25);
+        font-family: 'Merriweather',
+        serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
     width: 100%;
-    position: absolute;
-    z-index: 1
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
-.feature-imgs-right {
-    /* display: flex; */
-    /* width: 20%; */
-    height: 150px;
-    float: right;
-    /* position: absolute */
-    z-index: 2;
+.active,
+.accordion:hover {
+    background-color:#D7A870
 }
 
-.feature-imgs-left {
-    /* width: 20%; */
-    height: 150px;
-        z-index: 2;
-
+.panel {
+    padding: 0 18px;
+    background-color: #FFFFFF;
+    display: none;
+    overflow: hidden;
 }
 
+.faq-content div{
+    padding: 10px;
+}
 
 /* Footer */
 
@@ -403,4 +383,9 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 
+}
+
+.plus-sign {
+    color: rgb(120, 39, 25);
+    float: right;
 }
