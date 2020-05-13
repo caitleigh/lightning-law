@@ -60,7 +60,7 @@
         <section class="contact-form">
             <div class="form-background" />
 
-            <form action="javascript:alert(grecaptcha.getResponse(widgetId1));" action="http://localhost:7071/api/mailer">
+            <form action="http://localhost:7071/api/mailer">
                 <div id="contact-form-capt">
                     <div class="name-input">
                         <div class="first-name">
@@ -73,7 +73,6 @@
 
                         </div>
                     </div>
-
                     <div class="email">
                         <label>Email</label>
                         <input type="text" id="email" name="email ">
@@ -85,6 +84,15 @@
                     <button type="submit">Send</button>
                 </div>
             </form>
+
+            <form method="post" action="http://localhost:7071/api/mailer">
+    <input type="hidden" name="from" value="john@codefellows.com" />
+    <input type="hidden" name="subject" value="Thank You" />
+    <input type="email" name="to" placeholder="email@domain.com" />
+    <input type="hidden" name="text" value="This is some text in an email" />
+    <button type="submit">Send It</button>
+  </form>
+
         </section>
 
     </main>
@@ -136,7 +144,7 @@
                     data: data
                 })
                 .then(response => {
-                    alert("Message Sent!"")
+                    alert("response")
                 })
                 .catch(error => {
                     console.error(error)

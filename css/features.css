@@ -253,8 +253,7 @@ main {
 }
 
 .feature-info {
-    width: 100%;
-    
+    width: 100%;    
 }
 
 h3 {
@@ -279,6 +278,7 @@ h3 {
     /* padding: 20px; */
     padding-top: 30px;
     width: 35%;
+    margin-bottom: 0;
 }
 
 .feature-text-left{
@@ -295,12 +295,13 @@ h3 {
 .features p {
     /* width: 100%; */
         display: inline-block;
-    width: 60%;
+    /* width: 60%; */
     font-size: 14px;
     line-height: 1.75em;
     padding-bottom: 10px;
         flex-flow: column;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
+        width: 70%;
 }
 
 .features hr {
@@ -315,8 +316,8 @@ h3 {
     display: flex;
     flex-flow: column;
     flex-direction: column;
+    height: 100%;
 }
-
 
 .feature-imgs-right {
 
@@ -324,6 +325,7 @@ h3 {
     float: right;
     z-index: 3;
     position: relative;
+    margin: 30px;
 }
 
 .feature-imgs-left {
@@ -331,6 +333,7 @@ h3 {
     z-index: 3;
     float: left;
     position: relative;
+    margin: 30px;
 
 }
 
