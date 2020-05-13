@@ -1,44 +1,38 @@
-$(function () {
-
-  // init the validator
-  // validator files are included in the download package
-  // otherwise download from http://1000hz.github.io/bootstrap-validator
-
-  $('#contact-form').validator();
-
-
-  // when the form is submitted
-  $('#contact-form').on('submit', function (e) {
-
-    // if the validator does not prevent form submit
-    if (!e.isDefaultPrevented()) {
-      var url = 'mail.php';
-
-      // POST values in the background the the script URL
-      $.ajax({
-        type: 'POST',
-        url: url,
-        data: $(this).serialize(),
-        success: function (data) {
-          // data = JSON object that contact.php returns
-
-          // we recieve the type of the message: success x danger and apply it to the 
-          var messageAlert = 'alert-' + data.type;
-          var messageText = data.message;
-
-          // let's compose Bootstrap alert box HTML
-          var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-
-          // If we have messageAlert and messageText
-          if (messageAlert && messageText) {
-            // inject the alert to .messages div in our form
-            $('#contact-form').find('.messages').html(alertBox);
-            // empty the form
-            $('#contact-form')[0].reset();
-          }
-        },
-      });
-      return false;
-    }
-  });
-});
+< !DOCTYPE html >
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+        <body>
+          <form method="post" action="http://localhost:7071/api/mailer">
+            <input type="hidden" name="from" value="john@codefellows.com" />
+            <input type="hidden" name="subject" value="Thank You" />
+            <input type="email" name="to" placeholder="email@domain.com" />
+            <input type="hidden" name="text" value="This is some text in an email" />
+            <button type="submit">Send It</button>
+          </form>
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <script>
+            $('form').on('submit', function (e) {
+              e.preventDefault();
+      let fields = $(this).serializeArray();
+      let data = fields.reduce((d, v) => {
+              d[v.name] = v.value;
+        return d;
+      }, {});
+      $.ajax('http://localhost:7071/api/mailer', {
+              method: 'post',
+        data: data
+      })
+        .then(response => {
+              alert('Message Sent!')
+            })
+        .catch(error => {
+              console.error(error)
+            });
+    });
+  </script>
+        </body>
+</html>
