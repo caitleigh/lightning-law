@@ -131,20 +131,18 @@
                 d[v.name] = v.value;
                 return d;
             }, {});
-            $.ajax('http://localhost:7071/api/mailer', {
+            $.ajax('https://resources.lightning.law/api/mailer', {
                     method: 'post',
                     data: data
                 })
                 .then(response => {
-                    alert('Message Sent!')
+                    alert("Message Sent!"")
                 })
                 .catch(error => {
                     console.error(error)
                 });
-        });
+        })
     </script>
-
-
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
     </script>
 
