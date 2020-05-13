@@ -22,7 +22,7 @@ body {
     height: 75%;
     background-image: url("../public/images/faq-hero.jpg");
     background-position: center;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -191,7 +191,7 @@ hr {
 .faq-intro {
     display: inline-flex;
     padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     padding-right: 30px;
     padding-left: 30px;
     z-index: 20;
