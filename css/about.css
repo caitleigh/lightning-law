@@ -12,9 +12,9 @@ body {
     align-content: center;
     background-color: #FFFFFF;
     display: flex;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     font-size: 12px;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .about-intro h2 {
@@ -23,15 +23,15 @@ body {
         serif;
     font-size: 3em;
     line-height: 1.5em;
-    padding-right: 45%;
+    padding-right:175px;
     padding-left: 30px;
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
 }
 
 .about-intro p {
     display: flex;
-    height: 300px;
+    /* height: 300px; */
     align-content: center;
     line-height: 1.5em;
     font-size: 15px;
