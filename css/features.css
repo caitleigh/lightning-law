@@ -11,15 +11,16 @@ body {
 
 /* Header */
 header {
-    height: 700px;
+    /* height: 700px; */
     /* position: relative; */
     font-family: OpenSans-Regular;
     color: #FFFFFF;
 }
+
 /* Header background image */
 .header-background {
-    height: 100%;
-    background-image: url("./public/images/home-hero.jpg");
+    height: 75%;
+    background-image: url("../public/images/cr-features-hero.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -36,7 +37,7 @@ header {
     opacity: .8;
     background-size: cover;
     background-position: center;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
@@ -108,12 +109,12 @@ nav {
 /*  Features dropdrown*/
 
 .dropdown {
-        font-family: 'Open Sans',
+    font-family: 'Open Sans',
         sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
     float: left;
     overflow: hidden;
 }
@@ -169,12 +170,11 @@ nav {
     border-radius: 5px;
     text-transform: uppercase;
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 1em;
     color: #33312F;
-        z-index: 100 !important;
-
-    }
+    z-index: 100 !important;
+}
 
 hr {
     background-color: #F6F5F4;
@@ -189,7 +189,8 @@ hr {
 
 /* Header Intro */
 
-.header-intro {
+.cr-feature-intro {
+    display: inline-flex;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-right: 30px;
@@ -197,213 +198,108 @@ hr {
     z-index: 20;
 }
 
-.header-intro h2 {
+.cr-feature-intro h2 {
+    width: 35%;
     color: #FFFFFF;
+    background-color: #782719;
     font-family: 'Merriweather',
         serif;
     font-size: 3em;
-    line-height: 1.5em;
     margin-bottom: 0px;
 }
 
-.depo-background {
-    background-color: #F6F5F4;
-    width: 100%;
-    height: -.5px !important;
-    margin-left: -10px;
-    padding-left: -10px;
-    padding-right: 10px;
-    border-radius: 5%;
-}
-
-.header-intro h2 .depositions {
-    color: rgb(120, 39, 25);
-    padding-left: 10px;
-}
-
-.header-intro p {
-    width: 60%;
+.cr-feature-intro p {
+    width: 70%;
     font-family: 'Open Sans',
         sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    margin-left: 15%;
+    padding-top: 40px;
 }
 
 /*   Main   */
-/* Accelerate */
-.accelerate {
-    background-color: #F6F5F4;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
 
-.accelerate h3 {
-    color: rgb(120, 39, 25);
-    font-family: 'Merriweather',
-        serif;
-    font-size: 1.8em;
-    width: 100%;
-    align-content: center;
-    margin: auto;
-}
-
-.accelerate p {
-    width: 45%;
-    margin: auto;
-    margin-bottom: 1.5em;
-}
-
-.acclerate-separator {
-    width: 90px;
-    height: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(120, 39, 25);
-    border: none;
-}
-
-/* Depose */
-
-.depose {
-    height: 600px;
-    width: 100%;
-    display: block;
-}
-
-.depose-background {
-    background-color: rgba(50, 48, 47);
-    background-image: url("/public/images/home-stenograph-machine.png");
-    background-position: right;
-    background-position-y: 90px;
-    background-position-x: 125%;
-    background-repeat: no-repeat;
-    background-size: 600px;
+main {
     height: 100%;
-
-}
-
-.depose-text {
-    float: right;
-    right: 0;
-    width: 50%;
-    position: absolute;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-.depose-text h2 {
-    /* width: 50%; */
-    /* float: right; */
-    color: #FFFFFF;
-    font-family: 'Merriweather',
-        serif;
-    font-size: 3em;
-    line-height: 1.5em;
-    /* margin-top: 0; */
-}
-
-.depose-text p {
-    display: block;
-    color: #FFFFFF;
-}
-
-depose-screenshot {
-    margin-right: 5%;
-}
-
-.depose-image-1,
-.depose-image-2 {
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    float: left;
-    border: 1px solid black;
-}
-
-.depose-image-1 {
-    /* position: relative; */
-    margin-left: 5%;
-    margin-top: 4%;
-}
-
-.depose-image-2 {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 20%;
-}
-
-/* Features */
-
-.features-main {
-    width: 100%;
-    /* padding: 30px; */
-}
-
-.feature-background {
-    height: 350px;
-    width: 100%;
-    background:
-        linear-gradient(rgb(255, 255, 255, .9),
-            rgb(255, 255, 255, .9)),
-        url(./public/images/home-features.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* position: absolute; */
-    background-size: cover;
-}
-
-
-.feature-columns-main {
     display: flex;
-    flex-wrap: wrap;
-    /* padding: 30px; */
-    height: 300px;
-    margin: 30px;
 }
 
-.features-col {
-    margin-right: 30px;
-    width: 350px;
-
-}
-
-.features-col h3 {
-    /* width: 175px; */
-    /* padding-top: 30px; */
+.court-reporter-menu{
+    width: 20%;
     color: rgb(120, 39, 25);
-    font-family: 'Merriweather',
-        serif;
-    font-size: 1.8em;
-    padding: 30px;
-
-}
-
-.lawyers-col {
-    width: 350px;
-    margin-right: 30px;
-
-    padding: 30px;
-    background-color: #FFFFFF;
-    border: 1px solid #F6F5F4;
-}
-
-.lawyers-col h3 {
-    font-size: 1.8em;
     font-weight: bold;
-}
-
-.court-reporters-col {
     background-color: #FFFFFF;
-
-    width: 350px;
-    padding: 30px;
-    border: 1px solid #F6F5F4;
+    list-style: none;
+    line-height: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
-.court-reporters-col h3 {
-    font-size: 1.8em;
-    font-weight: bold;
+.court-reporter-menu a {
+        color: rgb(120, 39, 25);
 }
+.features {
+    background-color: #F6F5F4;
+    padding: 5%;
+    /* display: inline; */
+}
+
+.features div {
+    display: inline-flex;
+    flex-flow: column-wrap;
+}
+
+.feature-info {
+    width: 100%;
+}
+
+h5 {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: transparent;
+    width: 100%;
+    /* position: relative; */
+}
+
+.highlight-word {
+    color: rgb(120, 39, 25);
+}
+
+.features p {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.75em;
+    padding-bottom: 10px;
+}
+
+.features hr {
+    background-color: rgb(120, 39, 25);
+    border-color: rgb(120, 39, 25);
+    width: 100%;
+    position: absolute;
+    z-index: 1
+}
+
+.feature-imgs-right {
+    /* display: flex; */
+    /* width: 20%; */
+    height: 150px;
+    float: right;
+    /* position: absolute */
+    z-index: 2;
+}
+
+.feature-imgs-left {
+    /* width: 20%; */
+    height: 150px;
+        z-index: 2;
+
+}
+
 
 /* Footer */
 
@@ -441,6 +337,7 @@ footer h2 {
     display: inline-flex;
     justify-content: space-between !important;
 }
+
 .footer-sign-up button {
     margin-top: 30px;
     height: 3.5em;
@@ -448,13 +345,13 @@ footer h2 {
     border-radius: 5px;
     text-transform: uppercase;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
     font-size: 1.5em;
     color: #33312F;
 }
 
 .footer-nav {
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     display: inline-flex;
@@ -465,8 +362,8 @@ footer h2 {
     list-style: none;
     font-family: 'Open Sans',
         sans-serif;
-    font-size: 12px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
 
@@ -483,6 +380,7 @@ footer-nav-column {
     width: 100%;
 
 }
+
 .copyright p {
     /* margin-top: 10%; */
     display: flex;
@@ -500,7 +398,6 @@ footer-nav-column {
 a:hover {
     cursor: pointer;
     color: #D7A870
-
 }
 
 a {

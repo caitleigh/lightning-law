@@ -1,0 +1,142 @@
+body {
+    background-color: #33312F;
+    box-sizing: border-box;
+}
+
+.about-header {
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.about-intro {
+    /* height: 150px; */
+    align-content: center;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-right: 30px;
+    font-size: 12px;
+}
+
+.about-intro h2 {
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
+        serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    padding-right: 45%;
+    padding-left: 30px;
+    height: 100%;
+    text-align: center;
+}
+
+.about-intro p {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    line-height: 1.5em;
+    padding-top: 5px;
+}
+
+.our-story {
+    /* width: 100%; */
+    /* display: flex; */
+    background-color: #F6F5F4;
+    padding: 30px;
+}
+
+.our-story h3 {
+    display: block;
+    margin: auto;
+    width: 20%;
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
+        serif;
+    font-size: 1.5em;
+}
+
+.our-story hr {
+    /* position: absolute; */
+    margin: auto;
+    width: 10%;
+    height: 2px;
+    background-color: rgb(120, 39, 25);
+    border: none;
+}
+
+h4 {
+    color: rgb(120, 39, 25);
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* Our Story */
+.our-story {
+    width: 100%;
+}
+
+
+.our-story-info {
+    display: flex;
+    width: 90%;
+}
+
+.our-story-photo img{
+    float: right;
+    display: flex;
+    height: 400px;
+    /* margin-right:30px; */
+    /* padding-right: 30px; */
+    margin-left: 30px;
+    padding-left:30px;
+}
+
+.our-goal {
+    background-color: rgb(246, 245, 244);
+    width: 100%;
+    margin: auto;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.our-goal h3 {
+        margin: auto;
+        width: 150px;
+        color: rgb(120, 39, 25);
+        font-family: 'Merriweather',
+        serif;
+        font-size: 1.5em;
+}
+
+.our-goal p {
+    width: 50%;
+    margin: auto;
+}
+
+.our-goal hr{
+    width: 100px;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: rgb(120, 39, 25);
+    border: none;
+}
+
+.our-goal-background {
+        background: linear-gradient(rgb(246, 245, 244, .9),
+            rgb(2246, 245, 244, .9)),
+                 url("../public/images/logomark-dark.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 40%;        
+}
+
+    /* height: 350px;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255, .9),
+        rgb(255, 255, 255, .9)),
+    url(./public/images/home-features.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    background-size: cover; */
