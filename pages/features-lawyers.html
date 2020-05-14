@@ -63,11 +63,11 @@
     <main>
         <section class="court-reporter-menu">
             <ul>
-                <li><a href=#dashboard">Dashboard</a></li>
-                <li><a href="#transcripts">Transcripts</a></li>
-                <li><a href="#depositions">Depositions</a></li>
-                <li><a href="#cases">Cases</a></li>
-                <li><a href="#testimony">Testimony</a></li>
+                <li class="active"><a href=#dashboard">Dashboard</a></li>
+                <li class=""><a href="#transcripts">Transcripts</a></li>
+                <li class=""><a href="#depositions">Depositions</a></li>
+                <li class=""><a href="#cases">Cases</a></li>
+                <li class=""><a href="#testimony">Testimony</a></li>
             </ul>
         </section>
 
@@ -193,7 +193,20 @@
         </div>
     </footer>
 
+    <script>
+        $('.court-reporter-menu').on('click','li', function(){
+   $(this).addClass('active').siblings().removeClass('active');
+});
+    </script>
 
 </body>
+
+<!-- for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+} -->
 
 </html>

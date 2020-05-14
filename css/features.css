@@ -224,3 +224,7 @@ a {
 
 }
 
+.active {
+    border-left: 10px #782719 solid;
+}
+
