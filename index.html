@@ -38,12 +38,23 @@
                             <a href="/pages/features-court-reporters.html">Court Reporters</a>
                         </div>
                     </div>
-                    <li><a href="/pages/pricing.html">Pricing</a></li>
-                    <li><a href="/pages/faq.html">FAQ</a></li>
+                    <!-- <li><a href="/pages/pricing.html">Pricing</a></li> -->
+                    <!-- <li><a href="/pages/faq.html">FAQ</a></li> -->
                     <li><a href="/pages/about.html">About</a></li>
                     <li><a href="/pages/contact.html">Contact</a></li>
                     <li><a href="/pages/sign-up.html"><button>Sign Up</button></a>
                 </ul>
+
+                <select>
+                    <option value="/">Home</option>
+                    <option value="/pages/features-lawyers.html">Lawyers</option>
+                    <option value="pages/features-court-reporters.html">Court Reporters</option>
+                    <option value="/pages/pricing.html">Pricing</option>
+                    <option value="/pages/faq.html">FAQ</option>
+                    <option value="/pages/about.html">About</option>
+                    <!-- <option value="/pages/contact.html">Contact</option> -->
+                    <option value="/pages/sign-up.html">Sign Up</option>
+                </select>
             </div>
         </nav>
         <hr>
@@ -51,9 +62,9 @@
             <h2> A new way to take <br />
                 <span class="depo-background"> <span class="depositions">depositions</span> </span> <br /> is here.</h2>
             <p>Welcome to remote video depostions made easy.</p>
-            <p>At Lightning Law lawyers get same day free rough transcripts, Court Reporters get paid same day, video
-                and on line exhibits are tethered together and all depositions are stored in one easy to access hub.</p>
-            <p>It’s a new way to take testimony: the Lightning Law way.</p>
+            <p>At Lightning Law lawyers get same day free rough transcripts, court reporters get paid same day, video
+                and online exhibits are tethered together and all depositions are stored in one easy to access hub.</p>
+            <p>It’s a new way to take testimony: The Lightning Law ay.</p>
         </div>
     </header>
 
@@ -128,7 +139,7 @@
                 <ul>
                     <li><a href="/pages/features-lawyers.html">Features - Lawyer</a></li>
                     <li><a href="/pages/features-court-reporters.html">Features - Court Reporters</a></li>
-                    <li><a href="./pricing.html">Pricing</a></li>
+                    <!-- <li><a href="./pricing.html">Pricing</a></li> -->
                 </ul>
             </div>
 
@@ -136,7 +147,7 @@
                 <ul>
                     <li><a href="./pages/about.html">About</a></li>
                     <li><a href="/pages/contact.html">Contact</a></li>
-                    <li><a href="/pages/faq.html">FAQ</a></li>
+                    <!-- <li><a href="/pages/faq.html">FAQ</a></li> -->
                 </ul>
 
             </div>
@@ -145,6 +156,30 @@
             <p>COPYRIGHT 2020 - LIGHTNING LAW</p>
         </div>
     </footer>
+
+    <script>
+        $("<select />").appendTo("nav");
+
+        // Create default option "Go to..."
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Go to..."
+        }).appendTo("nav select");
+
+        // Populate dropdown with menu items
+        $("nav a").each(function () {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav select");
+        });
+
+        $("nav select").change(function () {
+            window.location = $(this).find("option:selected").val();
+        });
+    </script>
 </body>
 
 </html>

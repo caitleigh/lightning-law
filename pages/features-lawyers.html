@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class ="features-header">
+    <header class="features-header">
         <div class="header-background" />
         <div class="header-background-overlay" />
         <nav role="navigation">
@@ -36,14 +36,14 @@
                         <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="./features-lawyers.html">Lawyers</a>
-                            <a href="./features-court-reporters.html">Court Reporters</a>
+                            <!-- <a href="./features-lawyers.html">Lawyers</a> -->
+                            <!-- <a href="./features-court-reporters.html">Court Reporters</a> -->
                         </div>
                     </div>
-                    <li><a href="./pricing.html">Pricing</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
+                    <!-- <li><a href="./pricing.html">Pricing</a></li> -->
+                    <!-- <li><a href="./faq.html">FAQ</a></li> -->
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <!-- <li><a href="./contact.html">Contact</a></li> -->
                     <li><a href="./pages/sign-up.html"><button>Sign Up</button></a>
                 </ul>
             </div>
@@ -54,15 +54,20 @@
             <h2> <span>
                     Features for </br> Lawyers
                 </span> </h2>
-            <p>Court Reporters are the guardians of the record. We cherish our neutral record takers and want to keep
-                Court Reporters happy. We ensure same day payment to Court Reporters for appearances and transcripts. We
-                make it easier to sell and distribute additional transcripts. No subscription fees, ever.</p>
+            <p>"The lawyer who does not use discovery procedure is in the position of a physician who treats a serious
+                case without first using the X-ray." - George Ragland, Jr.<br /></br>
+                Depositions permit a party to preserve potential testimony for introduction at trial and serve as a tool
+                for investigating evidence before trial. This oral questioning of a witness was originally the exception
+                rather than the rule. It was only available if the witness was ancient or infirm or was about to set off
+                on a voyage to sea. In 1938 the pretrial phase of litigation was reformed to mimic procedures in use at
+                trial itself to improve the administration of justice. Oral testimony is available at the speed of light
+                via video, just like an X-ray. </p>
         </div>
     </header>
 
     <main>
-        <section class="court-reporter-menu">
-            <ul>
+        <section class="court-reporter-menu" >
+            <ul id="court-reporter-menu">
                 <li class="active"><a href=#dashboard">Dashboard</a></li>
                 <li class=""><a href="#transcripts">Transcripts</a></li>
                 <li class=""><a href="#depositions">Depositions</a></li>
@@ -175,15 +180,15 @@
                 <ul>
                     <li><a href="./features-lawyers.html">Features - Lawyer</a></li>
                     <li><a href="./features-court-reporters.html">Features - Court Reporters</a></li>
-                    <li><a href="./pricing.html">Pricing</a></li>
+                    <!-- <li><a href="./pricing.html">Pricing</a></li> -->
                 </ul>
             </div>
 
             <div class="footer-nav-column">
                 <ul>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
+                    <!-- <li><a href="./contact.html">Contact</a></li> -->
+                    <!-- <li><a href="./faq.html">FAQ</a></li> -->
                 </ul>
 
             </div>
@@ -203,6 +208,27 @@
             });
         });
     </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the header
+        var header = document.getElementById("court-reporter-menu");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
+
 
 </html>
