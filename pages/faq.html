@@ -45,7 +45,7 @@
         </nav>
         <hr />
         <div class="faq-intro">
-            <h2>FAQ</h2>
+            <h2><span>FAQ</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet
                 neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet,
                 molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
@@ -58,10 +58,12 @@
     <main>
 
         <section class="faq-menu">
-            <li><a href=#billing">Billing</a></li>
-            <li><a href="#depositions">Depositions</a></li>
-            <li><a href="#cases">Cases</a></li>
-            <li><a href="#payments">Payments</a></li>
+            <ul>
+                <li><a href=#billing">Billing</a></li>
+                <li><a href="#depositions">Depositions</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#payments">Payments</a></li>
+            </ul>
         </section>
 
         <section class="faq-content">
@@ -71,6 +73,7 @@
                         <i class="fas fa-plus"></i>
                     </span> </button>
                 <div class="panel">
+                    <p class="close-panel"><i class="fas fa-minus" ></i></p>
                     <p>
                         Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
                         nec
@@ -227,8 +230,41 @@
         </div>
     </footer>
 
+    <script>
+        var acc = document.getElementsByClassName('accordion');
+var close = document.getElementsByClassName('close-panel');
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function () {
+    /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+    this.classList.toggle('active');
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  });
+}
+
+for (i = 0; i < close.length; i++) {
+  close[i].addEventListener('click', function () {
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.parentElement;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  });
+}
+    </script>
+
 
 </body>
-<script src="../js/faq.js"></script>
 
 </html>

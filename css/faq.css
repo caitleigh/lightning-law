@@ -18,9 +18,10 @@ body {
 
 /* Header background image */
 .faq-background {
-    height: 75%;
+    height: 100%;
     background-image: url("../public/images/faq-hero.jpg");
     background-position: center;
+    background-size: cover;
     position: relative;
     top: 0;
     left: 0;
@@ -44,172 +45,43 @@ body {
 }
 
 
-/* Header logo */
-.header-logo {
-    width: 200px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 50px;
-    white-space: no-wrap;
-    z-index: 20;
-
-}
-
-/* Nav Bar */
-
-nav {
-    display: inline-flex;
-    width: 100%;
-    z-index: 20;
-}
-
-.nav-bar {
-    z-index: 20;
-    width: 100%;
-    margin-right: 25px;
-
-    display: inline-flex;
-    overflow: hidden;
-}
-
-.nav-bar-list li {
-    list-style: none;
-    z-index: 20;
-
-
-}
-
-.nav-bar-list {
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
-    align-items: center;
-    display: inline-flex;
-    justify-content: space-between !important;
-    z-index: 20;
-
-
-
-}
-
-.nav-bar-list a {
-    /* width: 50%; */
-    font-family: 'Open Sans',
-        sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    z-index: 20;
-
-}
-
-/*  Features dropdrown*/
-
-.dropdown {
-    font-family: 'Open Sans',
-        sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.nav-bar a:hover,
-.dropdown:hover .dropbtn {
-    color: #D7A870
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #D7A870;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 100 !important;
-}
-
-.dropdown-content a {
-    float: none;
-    color: #FFFFFF;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #D7A870;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.nav-bar button {
-    height: 3em;
-    width: 7em;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: 'Merriweather',
-        serif;
-    font-size: 1em;
-    color: #FFFFFF;
-    z-index: 100 !important;
-}
-
-hr {
-    background-color: #F6F5F4;
-    width: 95%;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    border-top: 1px solid rgba (0, 0, 0, .1);
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
-
 /* Header Intro */
 
 .faq-intro {
     display: inline-flex;
-    padding-top: 50px;
-    /* padding-bottom: 50px; */
     padding-right: 30px;
     padding-left: 30px;
     z-index: 20;
 }
 
 .faq-intro h2 {
-    width: 35%;
+    display: table;
+    /* width: 80%; */
     color: #FFFFFF;
-    background-color: #782719;
     font-family: 'Merriweather',
-        serif;
-    font-size: 3em;
+    serif;
+    font-size: 4.5em;
+    /* margin-bottom: 0px; */
+    /* background-color: #782719; */
+    margin-left: 50px;
+}
+
+.faq-intro h2 span {
+      background-color: #782719;
+      box-decoration-break: clone;
+      line-height: 1.4;
 }
 
 .faq-intro p {
-    width: 70%;
+    width: 45%;
+    margin-left: 35%;
     font-family: 'Open Sans',
-        sans-serif;
-    font-size: 1em;
-    margin-left: 15%;
-    padding-top: 40px;
+    sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    padding-top: 20px;
+    padding-right: 100px;
+    text-align: justify;
 }
 
 /*   Main   */
@@ -222,15 +94,21 @@ main {
 }
 
 .faq-menu {
-    width: 20%;
+    width: 35%;
+    /* height: 1000px; */
     color: rgb(120, 39, 25);
     font-weight: bold;
     background-color: #FFFFFF;
-    list-style: none;
-    line-height: 2;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
+}
+
+.faq-menu ul {
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 2.5;
+        list-style: none;
 }
 
 .faq-menu a {
@@ -263,7 +141,8 @@ main {
 
 .active,
 .accordion:hover {
-    background-color: #D7A870
+    background-color: #782719;
+    color: #FFFFFF
 }
 
 .panel {
@@ -276,98 +155,6 @@ main {
 .faq-content div {
     padding: 10px;
 }
-
-/* Footer */
-
-footer {
-    width: 100%;
-
-    position: absolute;
-}
-
-.footer-background {
-    height: 500px;
-    background-image: url("/public/images/footer-ink-well.png");
-    background-color: rgba(50, 48, 47);
-    background-size: 400px;
-    background-position: right;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-
-footer h2 {
-    color: #FFFFFF;
-    font-family: 'Merriweather',
-        serif;
-    font-size: 3em;
-    line-height: 1.5em;
-    margin-bottom: 0px;
-}
-
-.footer-sign-up {
-    margin-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 90%;
-    display: inline-flex;
-    justify-content: space-between !important;
-}
-
-.footer-sign-up button {
-    margin-top: 30px;
-    height: 3.5em;
-    width: 8em;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: 'Open Sans',
-        sans-serif;
-    font-size: 1.5em;
-    color: #33312F;
-}
-
-.footer-nav {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-}
-
-.footer-nav li {
-    list-style: none;
-    font-family: 'Open Sans',
-        sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-}
-
-footer-nav-column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 200px;
-}
-
-.copyright {
-    width: 100%;
-
-}
-
-.copyright p {
-    display: flex;
-    width: 100%;
-    color: grey;
-    font-size: 11px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-
 
 
 a:hover {
@@ -384,4 +171,20 @@ a {
 .plus-sign {
     color: rgb(120, 39, 25);
     float: right;
+}
+
+.plus-sign:hover {
+    color: #FFFFFF
+}
+
+.close-panel {
+    width: 100%;
+    font-size: 20px;
+    color: rgb(120, 39, 25);
+        text-align: right;
+        border: none;
+}
+
+.close-panel:hover {
+    cursor: pointer;
 }

@@ -1,14 +1,20 @@
 body {
     background-color: #33312F;
     box-sizing: border-box;
+        font-family: 'Open Sans',
+        sans-serif;
+        font: #33312F;
 }
 
 .about-header {
     height: 100%;
     padding-bottom: 30px;
+        font-family: OpenSans-Regular;
+        color: #FFFFFF;
 }
 
 .about-intro {
+    height: 300px;
     align-content: center;
     background-color: #FFFFFF;
     display: flex;
@@ -21,116 +27,154 @@ body {
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
         serif;
-    font-size: 3em;
+    font-size: 6.5em;
     line-height: 1.5em;
-    padding-right:175px;
-    padding-left: 30px;
+    padding-right:25%;
+    padding-left: 10%;
     /* height: 100%; */
     text-align: center;
 }
 
 .about-intro p {
+    width: 40%;
     display: flex;
     /* height: 300px; */
     align-content: center;
-    line-height: 1.5em;
-    font-size: 15px;
-    /* padding-top: 5px; */
-}
-
-.our-story {
-    background-color: #F6F5F4;
-    padding: 30px;
-    
-    /* margin: 0; */
-}
-
-.our-story h3 {
-    /* display: block; */
-    margin: auto;
-    padding-bottom: 10px;
-    width: 150px;
-    color: rgb(120, 39, 25);
-    font-family: 'Merriweather',
-        serif;
-    font-size: 1.5em;
-
-}
-
-.our-story hr {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 100px;
-    height: 2px;
-    background-color: rgb(120, 39, 25);
-    border: none;
+    line-height: 2em;
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 30px;
 }
 
 
 h4 {
     color: rgb(120, 39, 25);
-    font-size: 1.5em;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: bolder;
+    /* text-align: justify; */
 }
 
 /* Our Story */
 .our-story {
     width: 100%;
+    background-color: #F6F5F4;
+ padding-left: 50px;
+}
+.our-story-text h3 {
+    /* display: block; */
+    margin: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    color: rgb(120, 39, 25);
+    font-family: 'Merriweather',
+        serif;
+    font-size: 2.5em;
+    text-align: center;
+
 }
 
+.our-story-text {
+    width: 50%;
+}
+
+.our-story hr {
+    width: 80px;
+    height: 2px;
+    background-color: rgb(120, 39, 25);
+    border: none;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.our-story-text p {
+    text-align: justify;
+    line-height: 2;
+}
 
 .our-story-info {
     display: flex;
-    width: 90%;
+    width: 100%;
+    padding-left: 30px;
+        padding-top: 30px;
+
     
 }
 
-.our-story-photo img {
+.our-story-photo {
+    height: 100%;
+    /* position: absolute; */
     float: right;
     /* display: flex; */
-    height: 600px;
-    margin-left: 30px;
+    /* padding-left: 10%; */
+    margin-right: 0;
     /* padding-left: 30px; */
 }
+
+.our-story img {
+    /* height: 700px; */
+    width: 65%;
+    margin-left: 10%;
+}
+
+/* Our Goal*/
 
 .our-goal {
     background-color: rgb(246, 245, 244);
     width: 100%;
-        height: 500px;
+    /* height: 600px; */
+    /* height: 500px; */
     margin: auto;
     /* padding-bottom: 30px; */
     position: relative;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .our-goal h3 {
+    /* display: block; */
     margin: auto;
-    width: 150px;
+    padding-bottom: 20px;
+    width: 100%;
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
-        serif;
-    font-size: 1.5em;
+    serif;
+    font-size: 2.5em;
+    text-align: center;
+
 }
 
 .our-goal p {
-    width: 50%;
     margin: auto;
+    text-align: justify;
+    line-height: 2;
+    width: 40%;
+}
+
+.our-goal h4 {
+    width: 40%;
+    margin:auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 .our-goal hr {
-    width: 100px;
+    width: 80px;
     height: 2px;
-    margin-bottom: 30px;
     background-color: rgb(120, 39, 25);
     border: none;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .our-goal-background {
     background: linear-gradient(rgb(246, 245, 244, .95),
-            rgb(2246, 245, 244, .9)),
+            rgb(246, 245, 244, .95)),
         url("../public/images/logomark-dark.png");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 28%;
-    height: 500px;
+    background-size: 36%;
+    /* height: 500px; */
 }

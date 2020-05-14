@@ -9,6 +9,13 @@
     <!--  stylehsheets    -->
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="../css/contact.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -60,39 +67,35 @@
         <section class="contact-form">
             <div class="form-background" />
 
-            <form action="http://localhost:7071/api/mailer">
-                <div id="contact-form-capt">
-                    <div class="name-input">
-                        <div class="first-name">
-                            <label>First Name</label>
-                            <input type="text" id="fname" name="firstname ">
-                        </div>
-                        <div class="last-name">
-                            <label>Last Name</label>
-                            <input type="text" id="lname" name="lastname ">
+            <form id="captcha_form" action="https://resources.lightning.law/api/mailer" method="post"
+                onsubmit="return submitUserForm()">
+                <input type="hidden" name="to" value="caitleigh27@gmail.com" />
+                <input type="hidden" name="subject" value="New Message" />
+                <input type="hidden" name="from" value="caitleigh27@gmail.com" />
+                <div class="name-input">
+                    <div class="first-name">
+                        <label>First Name</label>
+                        <input type="text" id="fname" name="firstname" value="" required>
+                    </div>
+                    <div class="last-name">
+                        <label>Last Name</label>
+                        <input type="text" id="lname" name="lastname" value="" required>
+                    </div>
+                </div>
+                <div class="email">
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" value="" required>
+                </div>
+                <div class="message">
+                    <label>Message</label>
+                    <textarea type="text" id="message" name="message " value="" required></textarea>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    data-callback="verifyCaptcha"></div>
+                <button type="submit">Send</button>
 
-                        </div>
-                    </div>
-                    <div class="email">
-                        <label>Email</label>
-                        <input type="text" id="email" name="email ">
-                    </div>
-                    <div class="message">
-                        <label>Message</label>
-                        <textarea type="text" id="message" name="message " value=""></textarea>
-                    </div>
-                    <button type="submit">Send</button>
                 </div>
             </form>
-
-            <form method="post" action="http://localhost:7071/api/mailer">
-    <input type="hidden" name="from" value="john@codefellows.com" />
-    <input type="hidden" name="subject" value="Thank You" />
-    <input type="email" name="to" placeholder="email@domain.com" />
-    <input type="hidden" name="text" value="This is some text in an email" />
-    <button type="submit">Send It</button>
-  </form>
-
         </section>
 
     </main>
@@ -137,6 +140,10 @@
             let fields = $(this).serializeArray();
             let data = fields.reduce((d, v) => {
                 d[v.name] = v.value;
+                // d[v.lastname] = v.value;
+                // d[v.email] = v.value;
+                // d[v.message] = v.value;
+                console.log('data:', d)
                 return d;
             }, {});
             $.ajax('https://resources.lightning.law/api/mailer', {
@@ -144,16 +151,32 @@
                     data: data
                 })
                 .then(response => {
-                    alert("response")
+                    console.log('action has happend:', response)
+                    alert("Your message has been sent!")
                 })
                 .catch(error => {
-                    console.error(error)
+                    console.error(error, data)
+                    alert('error:', error, data)
                 });
         })
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-    </script>
 
+        function submitUserForm() {
+            var response = grecaptcha.getResponse();
+            if (response.length == 0) {
+                document.getElementById('g-recaptcha-error').innerHTML =
+                    '<span style="color:red;">This field is required.</span>';
+                return false;
+            }
+            return true;
+        }
+
+        function verifyCaptcha() {
+            document.getElementById('g-recaptcha-error').innerHTML = '';
+        }
+    </script>
 </body>
+
+<!-- <script src="../js/contact.js"></script> -->
+
 
 </html>
