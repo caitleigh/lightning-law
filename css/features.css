@@ -85,8 +85,8 @@ body {
     text-align: justify;
     float: right;
     flex-basis: auto;
-    overflow: auto;
-    height: 400px;
+    /* overflow: auto; */
+    /* height: 400px; */
 }
 
 /*   Main   */
