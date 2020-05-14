@@ -46,13 +46,10 @@ body {
 /* Header logo */
 .header-logo {
     width: 200px;
-    /* margin-top: 10px; */
     margin-left: 25px;
     margin-right: 20%;
     white-space: no-wrap;
     z-index: 20;
-    /* position: absolute; */
-
 }
 
 /* Nav Bar */
@@ -73,7 +70,6 @@ nav {
     display: inline-flex;
     overflow: hidden;
     float: right;
-    /* margin-left: 100px; */
 }
 
 .nav-bar-list li {
