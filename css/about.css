@@ -1,26 +1,18 @@
 body {
     background-color: #33312F;
     box-sizing: border-box;
-        font-family: 'Open Sans',
+    font-family: 'Open Sans',
         sans-serif;
-        font: #33312F;
-}
-
-.about-header {
-    height: 100%;
-    padding-bottom: 30px;
-        font-family: OpenSans-Regular;
-        color: #FFFFFF;
+    font: #33312F;
 }
 
 .about-intro {
-    height: 300px;
     align-content: center;
     background-color: #FFFFFF;
     display: flex;
-    /* padding-right: 30px; */
     font-size: 12px;
-    /* height: 300px; */
+    padding-right: 30px;
+    flex-wrap: wrap;
 }
 
 .about-intro h2 {
@@ -29,21 +21,18 @@ body {
         serif;
     font-size: 6.5em;
     line-height: 1.5em;
-    padding-right:25%;
-    padding-left: 10%;
-    /* height: 100%; */
+    margin-left: 50px;
     text-align: center;
 }
 
 .about-intro p {
     width: 40%;
-    display: flex;
-    /* height: 300px; */
     align-content: center;
-    line-height: 2em;
+    line-height: 2;
     font-size: 16px;
     text-align: justify;
     padding-top: 30px;
+    margin-left: 35%;
 }
 
 
@@ -58,8 +47,9 @@ h4 {
 .our-story {
     width: 100%;
     background-color: #F6F5F4;
- padding-left: 50px;
+    padding-left: 50px;
 }
+
 .our-story-text h3 {
     /* display: block; */
     margin: auto;
@@ -96,9 +86,9 @@ h4 {
     display: flex;
     width: 100%;
     padding-left: 30px;
-        padding-top: 30px;
+    padding-top: 30px;
 
-    
+
 }
 
 .our-story-photo {
@@ -138,7 +128,7 @@ h4 {
     width: 100%;
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 2.5em;
     text-align: center;
 
@@ -153,7 +143,7 @@ h4 {
 
 .our-goal h4 {
     width: 40%;
-    margin:auto;
+    margin: auto;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;

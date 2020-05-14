@@ -1,9 +1,9 @@
 body {
     background-color: #33312F;
     box-sizing: border-box;
-            font-family: 'Open Sans',
-            sans-serif;
-            font: #33312F;
+    font-family: 'Open Sans',
+        sans-serif;
+    font: #33312F;
 }
 
 .pricing-header {
@@ -24,10 +24,10 @@ body {
 .pricing-intro h2 {
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 6.5em;
     line-height: 1.5em;
-    padding-right:25%;
+    padding-right: 25%;
     padding-left: 10%;
     /* height: 100%; */
     text-align: center;
@@ -45,7 +45,7 @@ body {
     padding-top: 30px;
 }
 
-            /* <section class="pricing-info"><div class="pricing-table"><div class="pricing-text"> */
+/* <section class="pricing-info"><div class="pricing-table"><div class="pricing-text"> */
 
 .pricing-info {
 
@@ -59,29 +59,32 @@ body {
 h3 {
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 2.5em;
 }
 
 h4 {
     font-size: 65px;
-    font-weight: bolder;;
+    font-weight: bolder;
+    ;
     margin-bottom: 0;
-        text-align: center;
+    text-align: center;
 
 }
 
 sup {
     font-size: 35px;
 }
+
 h5 {
     font-size: 15px;
     font-weight: bolder;
     margin-top: 0;
     margin-bottom: 0;
-        text-align: center;
+    text-align: center;
 
 }
+
 .pricing-table {
     background-color: #FFFFFF;
     width: 400px;
@@ -92,7 +95,7 @@ h5 {
 
 .pricing-table ul {
     padding-left: 0;
-        text-align: center;
+    text-align: center;
 
 }
 
@@ -106,10 +109,10 @@ h5 {
 
 .pricing-table hr {
     width: 20%;
-        height: 2px;
-        background-color: rgb(120, 39, 25);
-        border: none;
-        margin-top: 15px;
+    height: 2px;
+    background-color: rgb(120, 39, 25);
+    border: none;
+    margin-top: 15px;
 }
 
 .pricing-info button {
@@ -125,7 +128,7 @@ h5 {
     ;
 }
 
-.pricing-text { 
+.pricing-text {
     /* padding-left: 250px; */
     width: 55%;
     padding-right: 50px;
