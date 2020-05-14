@@ -10,7 +10,7 @@ body {
 
 /* Header */
 .features-header {
-    height: 675px;
+    height: 700px;
     max-height: 100%;
     font-family: OpenSans-Regular;
     color: #FFFFFF;
@@ -61,9 +61,10 @@ body {
     font-family: 'Merriweather',
         serif;
     font-size: 4.5em;
+    clear: left;
     /* margin-bottom: 0px; */
     /* background-color: #782719; */
-    margin-left: 50px;
+    /* margin-left: 50px; */
 
 }
 
@@ -74,7 +75,6 @@ body {
 }
 
 .cr-feature-intro p {
-    width: 425px;
         margin-left: 30%;
     font-family: 'Open Sans',
         sans-serif;
@@ -97,8 +97,8 @@ main {
 }
 
 .court-reporter-menu {
-    width: 35%;
-    /* height: 1000px; */
+    width: 300px;
+    /* height: 100%; */
     color: rgb(120, 39, 25);
     font-weight: bold;
     background-color: #FFFFFF;
@@ -113,7 +113,6 @@ main {
     font-weight: bolder;
     line-height: 2.5;
     list-style: none;
-
 }
 
 .court-reporter-menu li {
@@ -127,6 +126,8 @@ main {
 
 .features {
     display: flex;
+    width:80%;
+    float: right;
     /* justify-content: right; */
     background-color: #F6F5F4;
     /* padding-right: 5%;
@@ -136,6 +137,7 @@ main {
     flex-wrap: wrap;
     /* display: inline; */
     /* padding-left: 20%; */
+    clear: left;
 }
 
 h3 {
@@ -182,14 +184,14 @@ h3 {
 
 .features p {
     /* width: 100%; */
-    display: inline-block;
+    /* display: inline-block; */
     /* width: 60%; */
     font-size: 15px;
     line-height: 1.75em;
     padding-bottom: 10px;
-    flex-flow: column;
+    /* flex-flow: column; */
     /* margin-bottom: 30px; */
-    width: 70%;
+    /* width: 70%; */
     text-align: justify;
 
 }
@@ -242,4 +244,16 @@ a {
 .active {
     border-left: 10px #782719 solid;
     line-height: 30px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 120px;
 }
