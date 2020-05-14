@@ -56,11 +56,11 @@
 
     <main>
         <section class="court-reporter-menu">
-            <li><a href=#dashboard">Dashboard</a></li>
-            <li><a href="#transcripts">Transcripts</a></li>
-            <li><a href="#depositions">Depositions</a></li>
-            <li><a href="#cases">Cases</a></li>
-            <li><a href="#payments">Payments</a></li>
+            <li class="active"><a href=#dashboard">Dashboard</a></li>
+            <li class=""><a href="#transcripts">Transcripts</a></li>
+            <li class=""><a href="#depositions">Depositions</a></li>
+            <li class=""><a href="#cases">Cases</a></li>
+            <li class=""><a href="#payments">Payments</a></li>
         </section>
 
         <section class="features">
@@ -189,7 +189,17 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    <script>
+
+$(function() {
+$("li").click(function() {
+  $("li").removeClass("active");
+  $(this).addClass("active");
+});
+});
+    </script>
 </body>
 
 </html>

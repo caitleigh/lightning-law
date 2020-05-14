@@ -59,10 +59,10 @@
 
         <section class="faq-menu">
             <ul>
-                <li><a href=#billing">Billing</a></li>
-                <li><a href="#depositions">Depositions</a></li>
-                <li><a href="#cases">Cases</a></li>
-                <li><a href="#payments">Payments</a></li>
+                <li class="active-item"><a href=#billing">Billing</a></li>
+                <li class=""><a href="#depositions">Depositions</a></li>
+                <li class=""><a href="#cases">Cases</a></li>
+                <li class=""><a href="#payments">Payments</a></li>
             </ul>
         </section>
 
@@ -73,7 +73,7 @@
                         <i class="fas fa-plus"></i>
                     </span> </button>
                 <div class="panel">
-                    <p class="close-panel"><i class="fas fa-minus" ></i></p>
+                    <p class="close-panel"><i class="fas fa-minus"></i></p>
                     <p>
                         Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
                         nec
@@ -230,38 +230,49 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $("li").click(function () {
+                $("li").removeClass("active-item");
+                $(this).addClass("active-item");
+            });
+        });
+    </script>
+
     <script>
         var acc = document.getElementsByClassName('accordion');
-var close = document.getElementsByClassName('close-panel');
-var i;
+        var close = document.getElementsByClassName('close-panel');
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
-    /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-    this.classList.toggle('active');
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', function () {
+                /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                this.classList.toggle('active');
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-    } else {
-      panel.style.display = 'block';
-    }
-  });
-}
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        }
 
-for (i = 0; i < close.length; i++) {
-  close[i].addEventListener('click', function () {
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.parentElement;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-    } else {
-      panel.style.display = 'block';
-    }
-  });
-}
+        for (i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function () {
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.parentElement;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        }
     </script>
 
 
