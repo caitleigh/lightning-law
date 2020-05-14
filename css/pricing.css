@@ -1,6 +1,9 @@
 body {
     background-color: #33312F;
     box-sizing: border-box;
+            font-family: 'Open Sans',
+            sans-serif;
+            font: #33312F;
 }
 
 .pricing-header {
@@ -9,30 +12,37 @@ body {
 }
 
 .pricing-intro {
+    height: 300px;
     align-content: center;
     background-color: #FFFFFF;
     display: flex;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     font-size: 12px;
+    /* height: 300px; */
 }
 
 .pricing-intro h2 {
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
-        serif;
-    font-size: 3em;
-    padding-right: 45%;
-    padding-left: 30px;
-    height: 40px;
+    serif;
+    font-size: 6.5em;
+    line-height: 1.5em;
+    padding-right:25%;
+    padding-left: 10%;
+    /* height: 100%; */
     text-align: center;
+
 }
 
 .pricing-intro p {
+    width: 40%;
     display: flex;
-    height: 100%;
+    /* height: 300px; */
     align-content: center;
-    line-height: 1.5em;
-    padding-top: 5px;
+    line-height: 2em;
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 30px;
 }
 
             /* <section class="pricing-info"><div class="pricing-table"><div class="pricing-text"> */
@@ -41,6 +51,7 @@ body {
 
     background-color: #F6F5F4;
     padding: 30px;
+    padding-bottom: 50px;
     display: flex;
     /* width: 100%; */
 }
@@ -49,28 +60,40 @@ h3 {
     color: rgb(120, 39, 25);
     font-family: 'Merriweather',
     serif;
-    font-size: 1.8em;
+    font-size: 2.5em;
 }
 
 h4 {
-    font-size: 45px;
+    font-size: 65px;
+    font-weight: bolder;;
     margin-bottom: 0;
+        text-align: center;
+
 }
 
+sup {
+    font-size: 35px;
+}
 h5 {
-    font-size: 11px;
+    font-size: 15px;
+    font-weight: bolder;
     margin-top: 0;
+    margin-bottom: 0;
+        text-align: center;
+
 }
 .pricing-table {
     background-color: #FFFFFF;
-    width: 300px;
+    width: 400px;
     border: 2px solid #F6F5F4;
-    text-align: center;
+    margin-left: 50px;
     /* margin-right: 300px; */
 }
 
 .pricing-table ul {
     padding-left: 0;
+        text-align: center;
+
 }
 
 .pricing-table li {
@@ -86,20 +109,27 @@ h5 {
         height: 2px;
         background-color: rgb(120, 39, 25);
         border: none;
+        margin-top: 15px;
 }
 
 .pricing-info button {
     background-color: rgb(120, 39, 25);
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
-    height: 40px;
-    width: 125px;
-    margin-top: 15px;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    margin-left: 7%;
+    border-radius: 8px;
+    ;
 }
 
 .pricing-text { 
-    padding-left: 250px;
-    width: 70%;
-    padding-right: 30px;
+    /* padding-left: 250px; */
+    width: 55%;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: justify;
+    line-height: 1.5;
 }
