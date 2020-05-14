@@ -193,20 +193,17 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <script>
-        $('.court-reporter-menu').on('click','li', function(){
-   $(this).addClass('active').siblings().removeClass('active');
+
+$(function() {
+$("li").click(function() {
+  $("li").removeClass("active");
+  $(this).addClass("active");
+});
 });
     </script>
-
 </body>
-
-<!-- for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-} -->
 
 </html>
