@@ -184,14 +184,13 @@ nav select {
 .nav-bar button {
     height: 3em;
     width: 7em;
+    margin-top: -15px;
     border-radius: 5px;
     text-transform: uppercase;
     font-family: 'Merriweather',
         serif;
     font-size: 1em;
     color: #33312F;
-    z-index: 100 !important;
-
 }
 
 hr {
