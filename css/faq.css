@@ -59,7 +59,7 @@ body {
     /* width: 80%; */
     color: #FFFFFF;
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 4.5em;
     /* margin-bottom: 0px; */
     /* background-color: #782719; */
@@ -67,16 +67,16 @@ body {
 }
 
 .faq-intro h2 span {
-      background-color: #782719;
-      box-decoration-break: clone;
-      line-height: 1.4;
+    background-color: #782719;
+    box-decoration-break: clone;
+    line-height: 1.4;
 }
 
 .faq-intro p {
     width: 45%;
     margin-left: 35%;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
     font-size: 18px;
     line-height: 2;
     padding-top: 20px;
@@ -90,7 +90,7 @@ main {
     /* height: 700px; */
     display: flex;
     /* position: absolute; */
-    
+
 }
 
 .faq-menu {
@@ -105,10 +105,10 @@ main {
 }
 
 .faq-menu ul {
-        font-size: 20px;
-        font-weight: bolder;
-        line-height: 2.5;
-        list-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 2.5;
+    list-style: none;
 }
 
 .faq-menu li {
@@ -185,8 +185,8 @@ a {
     width: 100%;
     font-size: 20px;
     color: rgb(120, 39, 25);
-        text-align: right;
-        border: none;
+    text-align: right;
+    border: none;
 }
 
 .close-panel:hover {

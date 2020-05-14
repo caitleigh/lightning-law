@@ -9,13 +9,12 @@ body {
 }
 
 .contact-intro {
-    height: 300px;
     align-content: center;
     background-color: #FFFFFF;
     display: flex;
-    /* padding-right: 30px; */
     font-size: 12px;
-    /* height: 300px; */
+    padding-right: 30px;
+    flex-wrap: wrap;
 }
 
 .contact-intro h2 {
@@ -24,21 +23,18 @@ body {
     serif;
     font-size: 6.5em;
     line-height: 1.5em;
-    padding-right:25%;
-    padding-left: 10%;
-    /* height: 100%; */
+    margin-left: 50px;
     text-align: center;
 }
 
 .contact-intro p {
     width: 40%;
-    display: flex;
-    /* height: 300px; */
     align-content: center;
-    line-height: 2em;
+    line-height: 2;
     font-size: 16px;
     text-align: justify;
     padding-top: 30px;
+    margin-left: 30%;
 }
 
 .contact-form {

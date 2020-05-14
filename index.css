@@ -15,6 +15,7 @@ body {
     font-family: OpenSans-Regular;
     color: #FFFFFF;
 }
+
 /* Header background image */
 .header-background {
     height: 100%;
@@ -55,7 +56,7 @@ body {
 /* Nav Bar */
 
 nav {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     z-index: 20;
     height: 80px;
@@ -103,20 +104,20 @@ nav {
 /*  Features dropdrown*/
 
 .dropdown {
-        font-family: 'Open Sans',
+    font-family: 'Open Sans',
         sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
     float: left;
     overflow: hidden;
-        color: white;
+    color: white;
 
 }
 
 .dropdown:hover {
-    color:#D7A870;
+    color: #D7A870;
     cursor: pointer;
 }
 
@@ -169,12 +170,12 @@ nav {
     border-radius: 5px;
     text-transform: uppercase;
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 1em;
     color: #33312F;
-        z-index: 100 !important;
+    z-index: 100 !important;
 
-    }
+}
 
 hr {
     background-color: #F6F5F4;
@@ -350,7 +351,7 @@ depose-screenshot {
 }
 
 .feature-background {
-        height: 100%;
+    height: 100%;
 
     width: 100%;
     background:
@@ -413,10 +414,10 @@ depose-screenshot {
 
 .court-reporters-col {
     background-color: #FFFFFF;
-        margin-bottom: 30px;
+    margin-bottom: 30px;
     width: 350px;
     padding: 30px;
-        padding-top: 0px;
+    padding-top: 0px;
 
     border: 1px solid #F6F5F4;
 }
@@ -461,6 +462,7 @@ footer h2 {
     display: inline-flex;
     justify-content: space-between !important;
 }
+
 .footer-sign-up button {
     margin-top: 30px;
     height: 3.5em;
@@ -468,13 +470,13 @@ footer h2 {
     border-radius: 5px;
     text-transform: uppercase;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
     font-size: 1.5em;
     color: #33312F;
 }
 
 .footer-nav {
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     display: inline-flex;
@@ -502,6 +504,7 @@ footer-nav-column {
     width: 100%;
 
 }
+
 .copyright p {
     display: flex;
     width: 100%;
@@ -518,7 +521,6 @@ footer-nav-column {
 a:hover {
     cursor: pointer;
     color: #D7A870
-
 }
 
 a {
