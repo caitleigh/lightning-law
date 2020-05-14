@@ -115,7 +115,7 @@
                 <ul>
                     <li><a href="./features-lawyers.html">Features - Lawyer</a></li>
                     <li><a href="./features-court-reporters.html">Features - Court Reporters</a></li>
-                    <li><a href="./pricing.html">Pricing</a></li>
+                    <!-- <li><a href="./pricing.html">Pricing</a></li> -->
                 </ul>
             </div>
 
@@ -140,10 +140,6 @@
             let fields = $(this).serializeArray();
             let data = fields.reduce((d, v) => {
                 d[v.name] = v.value;
-                // d[v.lastname] = v.value;
-                // d[v.email] = v.value;
-                // d[v.message] = v.value;
-                console.log('data:', d)
                 return d;
             }, {});
             $.ajax('https://resources.lightning.law/api/mailer', {
@@ -155,7 +151,7 @@
                     alert("Your message has been sent!")
                 })
                 .catch(error => {
-                    console.error(error, data)
+                    console.error('error:', error)
                     alert('error:', error, data)
                 });
         })
@@ -175,8 +171,5 @@
         }
     </script>
 </body>
-
-<!-- <script src="../js/contact.js"></script> -->
-
 
 </html>

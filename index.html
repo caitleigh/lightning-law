@@ -44,17 +44,6 @@
                     <li><a href="/pages/contact.html">Contact</a></li>
                     <li><a href="/pages/sign-up.html"><button>Sign Up</button></a>
                 </ul>
-
-                <select>
-                    <option value="/">Home</option>
-                    <option value="/pages/features-lawyers.html">Lawyers</option>
-                    <option value="pages/features-court-reporters.html">Court Reporters</option>
-                    <option value="/pages/pricing.html">Pricing</option>
-                    <option value="/pages/faq.html">FAQ</option>
-                    <option value="/pages/about.html">About</option>
-                    <!-- <option value="/pages/contact.html">Contact</option> -->
-                    <option value="/pages/sign-up.html">Sign Up</option>
-                </select>
             </div>
         </nav>
         <hr>
@@ -157,29 +146,6 @@
         </div>
     </footer>
 
-    <script>
-        $("<select />").appendTo("nav");
-
-        // Create default option "Go to..."
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Go to..."
-        }).appendTo("nav select");
-
-        // Populate dropdown with menu items
-        $("nav a").each(function () {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav select");
-        });
-
-        $("nav select").change(function () {
-            window.location = $(this).find("option:selected").val();
-        });
-    </script>
 </body>
 
 </html>
