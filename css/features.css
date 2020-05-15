@@ -302,10 +302,6 @@ a {
         font-size: 14px;
     }
 
-    .court-reporter-menu {
-        display: none;
-    }
-
     .features {
         display: block;
         width: 100%;
@@ -340,4 +336,10 @@ a {
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+@media (max-width: 600px) {
+        .court-reporter-menu {
+            display: none;
+        }
 }
