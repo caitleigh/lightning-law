@@ -54,6 +54,22 @@ body {
     z-index: 20;
 }
 
+@media (min-width: 350px) and (max-width: 510px) {
+    .home-page-header {
+        display: block;
+    }
+    .header-logo {
+        margin-left: 65px;
+    }
+    .nav-bar {
+        width: 100%;;
+        /* margin: auto; */
+        /* margin-left: 80px; */
+        margin-right: 0 !important;
+        padding: none;
+    }
+}
+
 /* Nav Bar */
 
 nav {
@@ -243,6 +259,13 @@ span.depositions {
         sans-serif;
 }
 
+@media (min-width: 350px) and (max-width: 510px) {
+
+    .header-intro {
+        margin-left: 0 !important;
+    }
+}
+
 @media only screen and (max-width: 719px) {
     .header-intro p {
         font-size: 12px;
@@ -332,6 +355,13 @@ span.depositions {
     display: block;
     color: #FFFFFF; */
 /* } */ 
+
+@media (min-width: 350px) and (max-width: 510px) {
+
+    .depose-text {
+        width: 80% !important;
+    }
+}
 
 @media only screen and (max-width: 719px) {
 
