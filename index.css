@@ -176,6 +176,7 @@ nav {
         serif;
     font-size: 1em;
     color: #33312F;
+    margin-left: 10px;
 }
 
 hr {
@@ -734,5 +735,4 @@ a {
 
 button a {
     color: #33312F;
-    margin-left: 10px;
 }
