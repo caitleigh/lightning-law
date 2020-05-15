@@ -176,6 +176,7 @@ nav {
         serif;
     font-size: 1em;
     color: #33312F;
+    margin-left: 10px;
 }
 
 hr {
@@ -193,6 +194,7 @@ hr {
     hr {
         margin-top: 15%;
     }
+
 }
 
 /* Header Intro */
@@ -241,7 +243,7 @@ span.depositions {
         sans-serif;
 }
 
-@media(max-width: 719px) {
+@media only screen and (max-width: 719px) {
     .header-intro p {
         font-size: 12px;
     }
@@ -287,11 +289,11 @@ span.depositions {
 
 /* Depose */
 
-.depose {
+/* .depose {
     height: 600px;
     width: 100%;
     /* display: block; */
-}
+/* } */ 
 
 .depose-background {
     background-color: rgba(50, 48, 47);
@@ -305,14 +307,14 @@ span.depositions {
 }
 
 
-.depose-text {
+/* .depose-text {
     float: right;
     right: 0;
     width: 45%;
     position: absolute;
     margin-right: 50px;
     /* padding-right: 30px; */
-    padding-left: 30px;
+    /* padding-left: 30px;
 }
 
 .depose-text h2 {
@@ -326,31 +328,32 @@ span.depositions {
 
 .depose-text p {
     display: block;
-    color: #FFFFFF;
-}
+    color: #FFFFFF; */
+/* } */ 
 
-@media(max-width: 719px) {
+@media only screen and (max-width: 719px) {
 
     .depose {
-        display: flexbox;
+        /* display: flexbox; */
         /* flex-direction: column; */
-        height: 900px;
+        height: 1100px;
     }
 
     .depose-text {
-        position: absolute;
-        margin-top: 75%;
+        /* position: absolute; */
+        /* margin-top: 85%; */
         /* float: right; */
         /* right: 0; */
-        width: 45%;
+        /* width: 100%; */
         /* position: absolute; */
-        /* margin-right: 50px; */
-        /* padding-right: 30px; */
+        /* margin-right: px; */
+        padding-right: 30px;
         /* padding-left: 30px; */
     }
 
 .depose-text h2 {
     width: 100%;
+    margin-top: 20px;
 }
 
 .depose-text p {
@@ -359,7 +362,6 @@ span.depositions {
 }
 
 .depose-screenshot {
-    margin-200px;
     margin-right: 5%;
 }
 
@@ -386,11 +388,11 @@ span.depositions {
 }
 }
 
-@media (min-width: 720px) {
+@media only screen and (min-width: 720px) {
 
         .depose-text {
             display: relative;
-            /* position: absolute; */
+            width: 82%;
             /* margin-top: 75%; */
             /* float: right; */
             /* right: 0; */
@@ -398,7 +400,7 @@ span.depositions {
             /* position: absolute; */
             /* margin-right: 50px; */
             /* padding-right: 30px; */
-            /* padding-left: 30px; */
+            /* margin-left: 500px; */
         }
 
         .depose-text h2 {
@@ -421,14 +423,15 @@ span.depositions {
     .depose-image-2 {
         position: relative;
         margin-left: 11.5%;
-        margin-top: -8.5%;
+        margin-top: -10%;
+        margin-bottom: 50px;;
         /* margin-top: 0; */
         clear: both;
     }
 
 }
 
-@media(max-width: 1120px) {
+@media only screen and (max-width: 1150px) {
     .depose-screenshot {
         display: flexbox;
         margin-right: 5%;
@@ -437,10 +440,8 @@ span.depositions {
     .depose-text {
         float: right;
         right: 0;
-        width: 45%;
-        position: absolute;
-        /* margin-right: 50px; */
-        /* padding-right: 30px; */
+        width: 36%;
+        /* position: absolute; */
         padding-left: 30px;
     }
 
@@ -462,7 +463,7 @@ span.depositions {
     .depose-image-1,
     .depose-image-2 {
         background-color: white;
-        height: 200px;
+        height: 300px;
         /* width: 400px; */
         float: left;
         border: 1px solid black;
@@ -483,7 +484,10 @@ span.depositions {
 
 }
 
-@media (min-width:1120px) {
+@media only screen and (min-width:1150px) {
+    .depose {
+        display: block;
+    }
         .depose-screenshot {
         margin-right: 5%;
     }
@@ -495,7 +499,7 @@ span.depositions {
         position: absolute;
         /* margin-right: 50px; */
         /* padding-right: 30px; */
-        padding-left: 30px;
+        padding-left: 20%;
     }
 
     .depose-text h2 {
@@ -503,20 +507,22 @@ span.depositions {
         color: #FFFFFF;
         font-family: 'Merriweather',
             serif;
-        font-size: 2em;
-        line-height: 1.5em;
+    font-size: 3.5em;
+    line-height: 1.5em;
     }
 
     .depose-text p {
         display: block;
         color: #FFFFFF;
+                margin-right: 50px;
+
     }
 
 
     .depose-image-1,
     .depose-image-2 {
         background-color: white;
-        height: 200px;
+        height: 400px;
         /* width: 400px; */
         float: left;
         border: 1px solid black;
@@ -530,8 +536,9 @@ span.depositions {
     .depose-image-2 {
         position: relative;
         /* margin-left: ; */
-        /* margin-top: -8.5%; */
+        margin-top: -12%;
         /* margin-top: 0; */
+        margin-bottom: 50px;
         clear: both;
     }
 
@@ -724,4 +731,8 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 
+}
+
+button a {
+    color: #33312F;
 }
