@@ -731,3 +731,8 @@ a {
     text-decoration: none;
 
 }
+
+button a {
+    color: #33312F;
+    margin-left: 10px;
+}

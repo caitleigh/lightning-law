@@ -50,8 +50,6 @@ body {
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
-    z-index: 20;
-    flex-shrink: 3;
 }
 
 .cr-feature-intro h2 {
