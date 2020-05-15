@@ -289,21 +289,23 @@ span.depositions {
 
 /* Depose */
 
-/* .depose {
-    height: 600px;
+.depose {
+    height: 800px;
     width: 100%;
-    /* display: block; */
-/* } */ 
+    /* display: block;  */
+}
+
 
 .depose-background {
     background-color: rgba(50, 48, 47);
     background-image: url("/public/images/home-stenograph-machine.png");
     background-position: right;
     background-position-y: 90px;
-    background-position-x: 120%;
+    background-position-x: 150%;
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 1000px;
     height: 100%;
+    position: relative;
 }
 
 
@@ -432,6 +434,9 @@ span.depositions {
 }
 
 @media only screen and (max-width: 1150px) {
+    .depose {
+        height: 600px;
+    }
     .depose-screenshot {
         display: flexbox;
         margin-right: 5%;
@@ -441,8 +446,9 @@ span.depositions {
         float: right;
         right: 0;
         width: 36%;
-        /* position: absolute; */
+        position: absolute;
         padding-left: 30px;
+        padding-right: 50px;
     }
 
     .depose-text h2 {
@@ -541,8 +547,16 @@ span.depositions {
         margin-bottom: 50px;
         clear: both;
     }
+}
 
+@media (max-width: 510px) {
+    .depose {
+        display: block;
+    }
 
+    .depose-text {
+        position: relative;
+    }
 }
 
 /* Features */
