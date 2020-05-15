@@ -260,3 +260,86 @@ a {
 .sticky+.content {
     padding-top: 120px;
 }
+
+/* @media(min-width: 300px) and (max-width: 499px) {
+    .features-header {
+        display: inline-block;
+        height: 1000px !important;
+    }
+} */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .features-header {
+        height: 1000px;
+    }
+    .features-header h2 {
+        display: inline-block;
+        font-size: 4em;
+        /* width: 100%; */
+        margin: 0;
+    }
+    .features-header p {
+        width: 80% !important;
+        position: relative;
+        margin-top: 300px;
+        margin-right: 0;
+    }
+
+    .cr-feature-intro {
+        width: 100%;
+        display: flexbox;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .cr-feature-intro h2 {
+        width: 18%;
+        margin: 0;
+        padding: 0;
+    }
+    .cr-feature-intro p {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .features {
+        display: block;
+        width: 100%;
+    }
+
+    .features h5 {
+        width: 100%;
+        clear: both;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .feature-text-left {
+        margin: auto;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .feature-text-right {
+                padding-top: 0;
+                margin-top: 0;
+    }
+
+    .feature-imgs-right, .feature-imgs-left {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .features hr {
+        padding: 0;
+        width: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+        .court-reporter-menu {
+            display: none;
+        }
+}

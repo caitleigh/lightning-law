@@ -1,4 +1,5 @@
 body {
+    min-width: 490px;
     background-color: #33312F;
     box-sizing: border-box;
     font-family: 'Open Sans',
@@ -41,6 +42,73 @@ h4 {
     font-size: 30px;
     font-weight: bolder;
     /* text-align: justify; */
+}
+
+@media (min-width: 300px) and (max-width: 510px) {
+
+    .about-intro h2 {
+        margin: auto;
+    }
+    .about-intro p {
+        width: 100% !important;
+        margin-left: 20px;
+    }
+
+    .our-story-info {
+        display: inline !important;
+    }
+
+    .our-story-text {
+        margin: auto;
+        width: 80% !important;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .our-story-photo {
+        position: relative !important;
+        float: none !important;
+    }
+
+    .our-goal {
+        padding-top: 20px;
+        width: 100% !important;
+    }
+    .our-goal p {
+        width: 80% !important;
+    }
+
+    .footer-sign-up {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1160px) {
+    .about-intro {
+        display: inline-block;
+    }
+    .about-intro p {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .our-story-text-p2 {
+        padding: none;
+        width: 100%;
+        float: none;
+        position: relative;
+        /* display: none; */
+    }
+
+    .our-story-photo img{
+        clear: both;
+    }
+
+    .our-goal p {
+        width: 80% !important;
+    }
 }
 
 /* Our Story */
