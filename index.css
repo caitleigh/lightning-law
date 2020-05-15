@@ -49,7 +49,7 @@ body {
     display: inline;
     width: 200px;
     margin-left: 25px;
-    margin-right: 20%;
+    /* margin-right: 20%; */
     white-space: no-wrap;
     z-index: 20;
 }
@@ -103,22 +103,7 @@ nav {
 
 }
 
-/*  Small screen nav*/
-nav select {
-    display: none;
-}
-
 /*  Features dropdrown*/
-
-@media (max-width: 960px) {
-    nav ul {
-        display: none;
-    }
-
-    nav select {
-        display: inline-block;
-    }
-}
 
 .dropdown {
     font-family: 'Open Sans',
@@ -204,6 +189,12 @@ hr {
     overflow: visible;
 }
 
+@media(max-width: 719px) {
+    hr {
+        margin-top: 15%;
+    }
+}
+
 /* Header Intro */
 
 .header-intro {
@@ -220,7 +211,7 @@ hr {
     color: #FFFFFF;
     font-family: 'Merriweather',
         serif;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.5em;
     margin-bottom: 0px;
 }
@@ -248,6 +239,12 @@ span.depositions {
     width: 425px;
     font-family: 'Open Sans',
         sans-serif;
+}
+
+@media(max-width: 719px) {
+    .header-intro p {
+        font-size: 15px;
+    }
 }
 
 /*   Main   */
@@ -330,6 +327,12 @@ span.depositions {
 .depose-text p {
     display: block;
     color: #FFFFFF;
+}
+
+@media(max-width: 719px) {
+    .depose-text h2 {
+        font-size: 3em;
+    }
 }
 
 depose-screenshot {
